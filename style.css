@@ -93,7 +93,7 @@ ul li {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-image: url('/images/unchecked.png');
+    background-image: url('images/unchecked.png');
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -120,7 +120,7 @@ ul li.checked .check-box {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-image: url('/images/checked.png');
+    background-image: url('images/checked.png');
     background-size: cover;
     background-position: center;
 }
