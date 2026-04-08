@@ -42,7 +42,7 @@ list.addEventListener('click', (e) => {
         newSpan.innerHTML = `
             <input type="text" id="${index}" value="${currText}">
         `;
-        e.target.src = '/images/confirm.avif';
+        e.target.src = 'images/confirm.avif';
         e.target.classList.remove('btn-edit');
         e.target.classList.add('btn-save');
         const editInput = document.getElementById(index);
@@ -75,7 +75,7 @@ function render(arr) {
     list.innerHTML = '';
     if (arr.length !== 0) {
         arr.forEach((task, i) => {
-            list.innerHTML += `<li class="${task.checked ? 'checked' : ''}" data-id="${task.id}">${i + 1}.<span class="check-box"></span><span class="task-text">${task.text}</span><img class="btn-edit" src="/images/edit-icon.png"><span class="btn-close"></span></li>`;
+            list.innerHTML += `<li class="${task.checked ? 'checked' : ''}" data-id="${task.id}">${i + 1}.<span class="check-box"></span><span class="task-text">${task.text}</span><img class="btn-edit" src="images/edit-icon.png"><span class="btn-close"></span></li>`;
         });
     } else {
         list.innerHTML = `
